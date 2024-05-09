@@ -41,7 +41,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lblAtualizar" min="-2" max="-2" attributes="0"/>
                           <Component id="lblSair" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblVeder" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblVender" min="-2" max="-2" attributes="0"/>
                           <Component id="lblExtrato" min="-2" pref="192" max="-2" attributes="0"/>
                           <Component id="lblCompra" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblSacar" alignment="0" min="-2" pref="192" max="-2" attributes="0"/>
@@ -56,13 +56,9 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblSaldo" min="-2" pref="192" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblNomeInvestidor" min="-2" pref="255" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="lblTitulo" min="-2" pref="474" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="15" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -72,10 +68,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="lblTitulo" max="32767" attributes="0"/>
-                  <Component id="lblNomeInvestidor" max="32767" attributes="0"/>
-              </Group>
+              <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="bt1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
@@ -104,7 +97,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="bt6" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                  <Component id="lblVeder" alignment="3" max="32767" attributes="0"/>
+                  <Component id="lblVender" alignment="3" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -127,7 +120,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Book Antiqua" size="36" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Bem-Vindo, "/>
+        <Property name="text" type="java.lang.String" value="Bem-Vinda, Luana Beatriz "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="bt1">
@@ -298,7 +291,7 @@
         <Property name="text" type="java.lang.String" value="Comprar criptomoedas "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblVeder">
+    <Component class="javax.swing.JLabel" name="lblVender">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
@@ -321,8 +314,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblNomeInvestidor">
     </Component>
   </SubComponents>
 </Form>

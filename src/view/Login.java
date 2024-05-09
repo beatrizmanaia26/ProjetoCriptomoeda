@@ -4,6 +4,10 @@
  */
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author luana
@@ -17,6 +21,54 @@ public class Login extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtLogin() {
+        return btLogin;
+    }
+
+    public void setBtLogin(JButton btLogin) {
+        this.btLogin = btLogin;
+    }
+
+    public JLabel getLblCPF() {
+        return lblCPF;
+    }
+
+    public void setLblCPF(JLabel lblCPF) {
+        this.lblCPF = lblCPF;
+    }
+
+    public JLabel getLblLogin() {
+        return lblLogin;
+    }
+
+    public void setLblLogin(JLabel lblLogin) {
+        this.lblLogin = lblLogin;
+    }
+
+    public JLabel getLblSenha() {
+        return lblSenha;
+    }
+
+    public void setLblSenha(JLabel lblSenha) {
+        this.lblSenha = lblSenha;
+    }
+
+    public JTextField getTxtCPF() {
+        return txtCPF;
+    }
+
+    public void setTxtCPF(JTextField txtCPF) {
+        this.txtCPF = txtCPF;
+    }
+
+    public JTextField getTxtSenha() {
+        return txtSenha;
+    }
+
+    public void setTxtSenha(JTextField txtSenha) {
+        this.txtSenha = txtSenha;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,7 +78,7 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        lblLogin = new javax.swing.JLabel();
         lblSenha = new javax.swing.JLabel();
         lblCPF = new javax.swing.JLabel();
         txtSenha = new javax.swing.JTextField();
@@ -36,8 +88,8 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
 
-        jLabel1.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
-        jLabel1.setText("Login");
+        lblLogin.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
+        lblLogin.setText("Login");
 
         lblSenha.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         lblSenha.setText("Senha:");
@@ -60,7 +112,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(178, 178, 178)
-                        .addComponent(jLabel1))
+                        .addComponent(lblLogin))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,7 +131,7 @@ public class Login extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCPF)
@@ -131,8 +183,8 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btLogin;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblCPF;
+    private javax.swing.JLabel lblLogin;
     private javax.swing.JLabel lblSenha;
     private javax.swing.JTextField txtCPF;
     private javax.swing.JTextField txtSenha;
