@@ -35,7 +35,8 @@ public class CadastroInvestidor extends javax.swing.JFrame {
         lblNomeInvest = new javax.swing.JLabel();
         txtNomeInvest = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jMenuMenu = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,8 +66,17 @@ public class CadastroInvestidor extends javax.swing.JFrame {
 
         txtNomeInvest.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        jMenuMenu.setText("Menu");
+
+        jMenuItem1.setText("menu");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenuMenu.add(jMenuItem1);
+
+        jMenuBar1.add(jMenuMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -128,6 +138,10 @@ public class CadastroInvestidor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btCadastrarActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
    
 //    public static void main(String args[]) {
 //        /* Set the Nimbus look and feel */
@@ -163,8 +177,9 @@ public class CadastroInvestidor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btCadastrar;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenu jMenuMenu;
     private javax.swing.JLabel lblCPFInvest;
     private javax.swing.JLabel lblCadastroInvestidor;
     private javax.swing.JLabel lblNomeInvest;
