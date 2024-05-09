@@ -40,16 +40,15 @@ public class BemVindoUsuario extends javax.swing.JFrame {
         lblDeposito = new javax.swing.JLabel();
         lblSacar = new javax.swing.JLabel();
         lblCompra = new javax.swing.JLabel();
-        lblVeder = new javax.swing.JLabel();
+        lblVender = new javax.swing.JLabel();
         lblAtualizar = new javax.swing.JLabel();
         lblSair = new javax.swing.JLabel();
-        lblNomeInvestidor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Investidor");
 
         lblTitulo.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
-        lblTitulo.setText("Bem-Vindo, ");
+        lblTitulo.setText("Bem-Vinda, Luana Beatriz ");
 
         bt1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         bt1.setText("1");
@@ -138,8 +137,8 @@ public class BemVindoUsuario extends javax.swing.JFrame {
         lblCompra.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblCompra.setText("Comprar criptomoedas ");
 
-        lblVeder.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        lblVeder.setText("Vender criptomoedas ");
+        lblVender.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblVender.setText("Vender criptomoedas ");
 
         lblAtualizar.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblAtualizar.setText("Atualizar cotação");
@@ -167,7 +166,7 @@ public class BemVindoUsuario extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblAtualizar)
                             .addComponent(lblSair)
-                            .addComponent(lblVeder)
+                            .addComponent(lblVender)
                             .addComponent(lblExtrato, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblCompra)
                             .addComponent(lblSacar, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -179,19 +178,14 @@ public class BemVindoUsuario extends javax.swing.JFrame {
                                 .addComponent(bt1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblSaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblTitulo)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblNomeInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(15, Short.MAX_VALUE))))
+                            .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblNomeInvestidor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(lblTitulo)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -215,7 +209,7 @@ public class BemVindoUsuario extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblVeder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblVender, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -311,11 +305,10 @@ public class BemVindoUsuario extends javax.swing.JFrame {
     private javax.swing.JLabel lblCompra;
     private javax.swing.JLabel lblDeposito;
     private javax.swing.JLabel lblExtrato;
-    private javax.swing.JLabel lblNomeInvestidor;
     private javax.swing.JLabel lblSacar;
     private javax.swing.JLabel lblSair;
     private javax.swing.JLabel lblSaldo;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JLabel lblVeder;
+    private javax.swing.JLabel lblVender;
     // End of variables declaration//GEN-END:variables
 }

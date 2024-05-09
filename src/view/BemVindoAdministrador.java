@@ -41,10 +41,11 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
         lblExcluirCripto = new javax.swing.JLabel();
         lblSair = new javax.swing.JLabel();
         lblAtualizCotacCripto = new javax.swing.JLabel();
-        lblNovoInvestidor6 = new javax.swing.JLabel();
+        lblExtratoInvestidor = new javax.swing.JLabel();
         lblSaldoInvestidor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menu Administrador");
 
         lblTitulo.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
         lblTitulo.setText("Bem-Vinda, Luana Beatriz ");
@@ -139,8 +140,8 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
         lblAtualizCotacCripto.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblAtualizCotacCripto.setText("Atualizar cotação das criptomoedas");
 
-        lblNovoInvestidor6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        lblNovoInvestidor6.setText("Consultar extrato de um investidor");
+        lblExtratoInvestidor.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblExtratoInvestidor.setText("Consultar extrato de um investidor");
 
         lblSaldoInvestidor.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblSaldoInvestidor.setText("Consultar saldo de um investidor");
@@ -171,7 +172,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(bt6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblNovoInvestidor6))
+                        .addComponent(lblExtratoInvestidor))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(bt8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -220,7 +221,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNovoInvestidor6))
+                    .addComponent(lblExtratoInvestidor))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -267,41 +268,39 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_bt8ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new BemVindoAdministrador().setVisible(true);
-            }
-        });
-    }
+   
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(BemVindoAdministrador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new BemVindoAdministrador().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt1;
@@ -315,9 +314,9 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel lblAtualizCotacCripto;
     private javax.swing.JLabel lblExcluirCripto;
     private javax.swing.JLabel lblExcluirInvestidor;
+    private javax.swing.JLabel lblExtratoInvestidor;
     private javax.swing.JLabel lblNovaCriptom;
     private javax.swing.JLabel lblNovoInvestidor;
-    private javax.swing.JLabel lblNovoInvestidor6;
     private javax.swing.JLabel lblSair;
     private javax.swing.JLabel lblSaldoInvestidor;
     private javax.swing.JLabel lblTitulo;
