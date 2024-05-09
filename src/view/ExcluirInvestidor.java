@@ -26,7 +26,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblCadastroInvestidor = new javax.swing.JLabel();
+        lblExcluirInvestidor = new javax.swing.JLabel();
         lblCPFInvest = new javax.swing.JLabel();
         txtCPFAdmin = new javax.swing.JTextField();
         btExcluir = new javax.swing.JButton();
@@ -35,9 +35,10 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
         jMenuItemMenu = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Excluir Investidor");
 
-        lblCadastroInvestidor.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
-        lblCadastroInvestidor.setText("Excluir Investidor");
+        lblExcluirInvestidor.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
+        lblExcluirInvestidor.setText("Excluir Investidor");
 
         lblCPFInvest.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         lblCPFInvest.setText("CPF:");
@@ -72,7 +73,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(83, Short.MAX_VALUE)
-                .addComponent(lblCadastroInvestidor)
+                .addComponent(lblExcluirInvestidor)
                 .addGap(61, 61, 61))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,7 +90,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(lblCadastroInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblExcluirInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCPFInvest)
@@ -151,7 +152,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemMenu;
     private javax.swing.JMenu jMenuMenu;
     private javax.swing.JLabel lblCPFInvest;
-    private javax.swing.JLabel lblCadastroInvestidor;
+    private javax.swing.JLabel lblExcluirInvestidor;
     private javax.swing.JTextField txtCPFAdmin;
     // End of variables declaration//GEN-END:variables
 }
