@@ -26,21 +26,86 @@ public class SaldoInvestidor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblSaldoInvestidor = new javax.swing.JLabel();
+        lblCPFInvest = new javax.swing.JLabel();
+        txtCPFAdmin = new javax.swing.JTextField();
+        btConsultar = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenuMenu = new javax.swing.JMenu();
+        jMenuItemMenu = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Saldo Investidor");
+
+        lblSaldoInvestidor.setFont(new java.awt.Font("Book Antiqua", 3, 24)); // NOI18N
+        lblSaldoInvestidor.setText("Consultar saldo de um investidor");
+
+        lblCPFInvest.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        lblCPFInvest.setText("CPF:");
+
+        txtCPFAdmin.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+
+        btConsultar.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        btConsultar.setText("Consultar");
+        btConsultar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btConsultarActionPerformed(evt);
+            }
+        });
+
+        jMenuMenu.setText("Menu");
+
+        jMenuItemMenu.setText("menu");
+        jMenuMenu.add(jMenuItemMenu);
+
+        jMenuBar1.add(jMenuMenu);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblSaldoInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(lblCPFInvest))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(108, 108, 108)
+                        .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(23, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(100, 100, 100)
+                    .addComponent(txtCPFAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(101, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblSaldoInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblCPFInvest)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(btConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(94, 94, 94)
+                    .addComponent(txtCPFAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(94, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConsultarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btConsultarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +143,12 @@ public class SaldoInvestidor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btConsultar;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemMenu;
+    private javax.swing.JMenu jMenuMenu;
+    private javax.swing.JLabel lblCPFInvest;
+    private javax.swing.JLabel lblSaldoInvestidor;
+    private javax.swing.JTextField txtCPFAdmin;
     // End of variables declaration//GEN-END:variables
 }
