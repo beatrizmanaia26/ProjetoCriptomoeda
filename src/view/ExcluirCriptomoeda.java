@@ -8,12 +8,12 @@ package view;
  *
  * @author beatr
  */
-public class ExcluirInvestidor extends javax.swing.JFrame {
+public class ExcluirCriptomoeda extends javax.swing.JFrame {
 
     /**
-     * Creates new form ExcluirInvestidor
+     * Creates new form ExcluirCriptomoeda
      */
-    public ExcluirInvestidor() {
+    public ExcluirCriptomoeda() {
         initComponents();
     }
 
@@ -26,24 +26,23 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblExcluirInvestidor = new javax.swing.JLabel();
-        lblCPFInvest = new javax.swing.JLabel();
-        txtCPFAdmin = new javax.swing.JTextField();
+        lblCadastroCriptom = new javax.swing.JLabel();
+        lblNomeCripto = new javax.swing.JLabel();
+        txtNomeCripto = new javax.swing.JTextField();
         btExcluir = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuMenu = new javax.swing.JMenu();
         jMenuItemMenu = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Excluir Investidor");
 
-        lblExcluirInvestidor.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
-        lblExcluirInvestidor.setText("Excluir Investidor");
+        lblCadastroCriptom.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
+        lblCadastroCriptom.setText("Excluir criptomoeda");
 
-        lblCPFInvest.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
-        lblCPFInvest.setText("CPF:");
+        lblNomeCripto.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        lblNomeCripto.setText("Nome:");
 
-        txtCPFAdmin.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtNomeCripto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
 
         btExcluir.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         btExcluir.setText("Excluir");
@@ -71,33 +70,30 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
-                .addComponent(lblExcluirInvestidor)
-                .addGap(61, 61, 61))
             .addGroup(layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(lblNomeCripto)
+                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(lblCPFInvest)
-                        .addGap(29, 29, 29)
-                        .addComponent(txtCPFAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(btExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtNomeCripto, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(148, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(78, 78, 78)
+                .addComponent(lblCadastroCriptom, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(lblExcluirInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addComponent(lblCadastroCriptom, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCPFInvest)
-                    .addComponent(txtCPFAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                    .addComponent(lblNomeCripto)
+                    .addComponent(txtNomeCripto, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addComponent(btExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+                .addGap(26, 26, 26))
         );
 
         pack();
@@ -128,20 +124,20 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ExcluirInvestidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExcluirCriptomoeda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ExcluirInvestidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExcluirCriptomoeda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ExcluirInvestidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExcluirCriptomoeda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ExcluirInvestidor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExcluirCriptomoeda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ExcluirInvestidor().setVisible(true);
+                new ExcluirCriptomoeda().setVisible(true);
             }
         });
     }
@@ -151,8 +147,8 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItemMenu;
     private javax.swing.JMenu jMenuMenu;
-    private javax.swing.JLabel lblCPFInvest;
-    private javax.swing.JLabel lblExcluirInvestidor;
-    private javax.swing.JTextField txtCPFAdmin;
+    private javax.swing.JLabel lblCadastroCriptom;
+    private javax.swing.JLabel lblNomeCripto;
+    private javax.swing.JTextField txtNomeCripto;
     // End of variables declaration//GEN-END:variables
 }
