@@ -38,7 +38,7 @@ public class ConsultarSaldo extends javax.swing.JFrame {
         txtNome1 = new javax.swing.JLabel();
         txtCPF = new javax.swing.JLabel();
         lblCPF = new javax.swing.JLabel();
-        lblCadastroInvestidor = new javax.swing.JLabel();
+        lblSaldo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuMenu = new javax.swing.JMenu();
         jMenuItemMenu = new javax.swing.JMenuItem();
@@ -75,8 +75,8 @@ public class ConsultarSaldo extends javax.swing.JFrame {
         lblCPF.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         lblCPF.setText("CPF:");
 
-        lblCadastroInvestidor.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
-        lblCadastroInvestidor.setText("Saldo");
+        lblSaldo.setFont(new java.awt.Font("Book Antiqua", 3, 36)); // NOI18N
+        lblSaldo.setText("Saldo");
 
         jMenuMenu.setText("Menu");
 
@@ -125,14 +125,14 @@ public class ConsultarSaldo extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(174, 174, 174)
-                .addComponent(lblCadastroInvestidor)
+                .addComponent(lblSaldo)
                 .addGap(0, 179, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblCadastroInvestidor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblSaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNome)
@@ -206,13 +206,13 @@ public class ConsultarSaldo extends javax.swing.JFrame {
     private javax.swing.JLabel lblBitcoin;
     private javax.swing.JLabel lblBitcoinRes;
     private javax.swing.JLabel lblCPF;
-    private javax.swing.JLabel lblCadastroInvestidor;
     private javax.swing.JLabel lblEthereum;
     private javax.swing.JLabel lblEthereumRes;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblReais;
     private javax.swing.JLabel lblRipple;
     private javax.swing.JLabel lblRippleRes;
+    private javax.swing.JLabel lblSaldo;
     private javax.swing.JLabel txtCPF;
     private javax.swing.JLabel txtNome;
     private javax.swing.JLabel txtNome1;
