@@ -29,7 +29,7 @@ public class ControllerLogin {
            view.setVisible(false);
        }
        else{
-           System.out.println("AAAAAA");
+//           System.out.println("AAAAAA");
        }
     }    
 }
