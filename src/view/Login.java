@@ -4,6 +4,7 @@
  */
 package view;
 
+import controller.ControllerLogin;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -19,6 +20,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        controller = new ControllerLogin(this);
     }
 
     public JButton getBtLogin() {
@@ -103,6 +105,11 @@ public class Login extends javax.swing.JFrame {
 
         btLogin.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         btLogin.setText("Login");
+        btLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btLoginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -148,6 +155,10 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
+       controller.ValidarUsuario();
+    }//GEN-LAST:event_btLoginActionPerformed
+
  
 //    public static void main(String args[]) {
 //        /* Set the Nimbus look and feel */
@@ -180,7 +191,7 @@ public class Login extends javax.swing.JFrame {
 //            }
 //        });
 //    }
-
+    private ControllerLogin controller;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btLogin;
     private javax.swing.JLabel lblCPF;
