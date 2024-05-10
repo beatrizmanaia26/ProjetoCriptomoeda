@@ -17,16 +17,19 @@ public class ControllerLogin {
     public ControllerLogin(Login view) {
         this.view = view;
     }
+    
+    
    public void ValidarUsuario(){
-       String cpfLogin = view.getLblCPF().getText();
-       String senhaLogin = view.getLblSenha().getText();
+       String cpfLogin = view.getTxtCPF().getText();
+       String senhaLogin = view.getTxtSenha().getText();
        
        if(cpfLogin.equals("52659434865") && senhaLogin.equals("belu")){
            BemVindoAdministrador adm = new BemVindoAdministrador();
            adm.setVisible(true);
+           view.setVisible(false);
        }
        else{
-           
+           System.out.println("AAAAAA");
        }
     }    
 }

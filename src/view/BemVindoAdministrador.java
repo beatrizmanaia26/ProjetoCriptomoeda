@@ -15,6 +15,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
      */
     public BemVindoAdministrador() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -43,6 +44,9 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
         lblAtualizCotacCripto = new javax.swing.JLabel();
         lblExtratoInvestidor = new javax.swing.JLabel();
         lblSaldoInvestidor = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        mLogin = new javax.swing.JMenu();
+        miLogin = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Administrador");
@@ -145,6 +149,20 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
 
         lblSaldoInvestidor.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblSaldoInvestidor.setText("Consultar saldo de um investidor");
+
+        mLogin.setText("Login");
+
+        miLogin.setText("Login");
+        miLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miLoginActionPerformed(evt);
+            }
+        });
+        mLogin.add(miLogin);
+
+        jMenuBar1.add(mLogin);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -268,6 +286,12 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_bt8ActionPerformed
 
+    private void miLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miLoginActionPerformed
+        Login l = new Login();
+        l.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_miLoginActionPerformed
+
    
 //    public static void main(String args[]) {
 //        /* Set the Nimbus look and feel */
@@ -311,6 +335,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
     private javax.swing.JButton bt6;
     private javax.swing.JButton bt7;
     private javax.swing.JButton bt8;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JLabel lblAtualizCotacCripto;
     private javax.swing.JLabel lblExcluirCripto;
     private javax.swing.JLabel lblExcluirInvestidor;
@@ -320,5 +345,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel lblSair;
     private javax.swing.JLabel lblSaldoInvestidor;
     private javax.swing.JLabel lblTitulo;
+    private javax.swing.JMenu mLogin;
+    private javax.swing.JMenuItem miLogin;
     // End of variables declaration//GEN-END:variables
 }
