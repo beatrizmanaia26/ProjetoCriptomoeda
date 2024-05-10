@@ -254,6 +254,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bt1ActionPerformed
@@ -293,6 +294,7 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_miLoginActionPerformed
 
    
+
 //    public static void main(String args[]) {
 //        /* Set the Nimbus look and feel */
 //        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

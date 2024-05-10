@@ -15,6 +15,7 @@ public class CadastroInvestidor extends javax.swing.JFrame {
      */
     public CadastroInvestidor() {
         initComponents();
+        
     }
 
     /**
