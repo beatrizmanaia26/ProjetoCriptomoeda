@@ -21,6 +21,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         controller = new ControllerLogin(this);
+        setLocationRelativeTo(null);
     }
 
     public JButton getBtLogin() {
