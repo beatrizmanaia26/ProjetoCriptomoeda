@@ -24,23 +24,24 @@ public class ControllerExcluirInvestidor {
         this.view = view;
         this.investidor = investidor;
     }
-
-    public void remover() {
-        String inves = investidor.getCpf();
-        int option = JOptionPane.showConfirmDialog(view, "Deseja realmente excluir?" + inves + "?");
-        if (option != 1) {
-            Conexao conexao = new Conexao();
-
-            try {
+    public void remover(){
+        String invest = investidor.getCpf();
+        int option = JOptionPane.showConfirmDialog(view,
+                                  "deseja realmente excluir?" + invest + "?");
+            if(option !=1){
+                 Conexao conexao = new Conexao();
+        
+            try{
                 Connection conn = conexao.getConnection();
                 BancoDAO dao = new BancoDAO(conn);
                 dao.excluir(investidor);
-                JOptionPane.showMessageDialog(view, "Excluído com sucesso");
-                view.setVisible(false);
-
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(view, "Falha de conexão");
+                JOptionPane.showMessageDialog(view, "excluido com sucesso");
+                view.setVisible(false);       
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(view, "falha de conexao");
             }
-        }
-    }
+        }   
+    }
 }
+
+   

@@ -28,9 +28,20 @@ public class BancoDAO {
         PreparedStatement statement = conn.prepareStatement(sql);
         statement.execute();
         conn.close();
-        
     }
-    
-    
-    
+      public ResultSet consultar(Investidor investidor) throws SQLException{ 
+        String sql = "select * from User where CPF = ? ";
+        PreparedStatement statement = conn.prepareStatement(sql);
+        statement.setString(1,investidor.getCpf());//1 pq  é primeira interrogação
+        statement.execute();//excuta a query e gera reesultado do select(da consulta)
+        ResultSet resultado = statement.getResultSet();
+        return resultado;
+    }
+      public void excluir(Investidor investidor) throws SQLException{
+        String sql = "delete from User where CPF = ?";
+        PreparedStatement statement = conn.prepareStatement(sql); //passa string para a conexao
+        statement.setString(1, investidor.getCpf());
+        statement.execute();
+        conn.close();
+      }    
 }
