@@ -20,16 +20,31 @@ public class ControllerLogin {
     
     
    public void ValidarUsuario(){
+<<<<<<< Updated upstream
        String cpfLogin = view.getTxtCPF().getText();
        String senhaLogin = view.getTxtSenha().getText();
+=======
+       //String cpfLogin = view.getLblCPF().getText();
+       //String senhaLogin = view.getLblSenha().getText();
+       String cpfLogin = "52659434865";
+       String senhaLogin = "belu";
+>>>>>>> Stashed changes
        
-       if(cpfLogin.equals("52659434865") && senhaLogin.equals("belu")){
+       if (cpfLogin.equals("52659434865") && !senhaLogin.equals("belu")){
            BemVindoAdministrador adm = new BemVindoAdministrador();
            adm.setVisible(true);
            view.setVisible(false);
+<<<<<<< Updated upstream
        }
        else{
 //           System.out.println("AAAAAA");
+=======
+       }          
+       else{
+           System.out.println("Cpf ou senha inválidos");
+>>>>>>> Stashed changes
        }
     }    
 }
+
+

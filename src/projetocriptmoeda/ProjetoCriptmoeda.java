@@ -20,7 +20,5 @@ public class ProjetoCriptmoeda {
  
         Login l = new Login();
         l.setVisible(true);
-        
     }
-    
 }
