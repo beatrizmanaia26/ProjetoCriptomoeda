@@ -35,11 +35,11 @@ public class ControllerCadastro {
             Connection conn = conexao.getConnection();
             BancoDAO dao = new BancoDAO(conn);
             dao.inserir(invest);
-            JOptionPane.showMessageDialog(view,"Usuario cadastrado");
+            JOptionPane.showMessageDialog(view,"Investidor cadastrado");
       
             
         }catch(SQLException e){
-            JOptionPane.showMessageDialog(view,"Usuario nao cadastrado");
+            JOptionPane.showMessageDialog(view,"Investidor nao cadastrado");
         }
     }
 }

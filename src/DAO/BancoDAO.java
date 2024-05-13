@@ -21,9 +21,10 @@ public class BancoDAO {
     }
     
     public void inserir(Investidor investidor) throws SQLException{
-        String sql = "insert into aluno (nome, usuario, senha) values('" +
-                aluno.getNome() + "', '" + aluno.getUsuario() + "', '" +
-                aluno.getSenha() + "')";
+        String sql = "insert into public \"User\" (\"ID_user\", \"Nome\", \"Senha\", \"CPF\") values('" +
+                investidor.getId() + "', '" + investidor.getNome() + "', '" +
+                investidor.getSenha() + "', '" +
+                investidor.getCpf() + "')";
         PreparedStatement statement = conn.prepareStatement(sql);
         statement.execute();
         conn.close();
