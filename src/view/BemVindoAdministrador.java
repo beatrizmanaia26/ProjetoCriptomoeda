@@ -256,7 +256,9 @@ public class BemVindoAdministrador extends javax.swing.JFrame {
 
 
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
-        // TODO add your handling code here:
+        CadastroInvestidor ci = new CadastroInvestidor();
+        ci.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_bt1ActionPerformed
 
     private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed

@@ -4,6 +4,7 @@
  */
 package view;
 
+import controller.ControllerCadastro;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -22,6 +23,8 @@ public class CadastroInvestidor extends javax.swing.JFrame {
      */
     public CadastroInvestidor() {
         initComponents();
+        setLocationRelativeTo(null);
+        control = new ControllerCadastro(this);
         
     }
 
@@ -112,6 +115,8 @@ public class CadastroInvestidor extends javax.swing.JFrame {
     public void setTxtSenhaInvest(JTextField txtSenhaInvest) {
         this.txtSenhaInvest = txtSenhaInvest;
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -146,11 +151,6 @@ public class CadastroInvestidor extends javax.swing.JFrame {
         txtSenhaInvest.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
 
         txtCPFInvest.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        txtCPFInvest.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCPFInvestActionPerformed(evt);
-            }
-        });
 
         btCadastrar.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         btCadastrar.setText("Cadastrar");
@@ -237,16 +237,12 @@ public class CadastroInvestidor extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastrarActionPerformed
-        // TODO add your handling code here:
+        control.salvarInvestidor();
     }//GEN-LAST:event_btCadastrarActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void txtCPFInvestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFInvestActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCPFInvestActionPerformed
 
    
 //    public static void main(String args[]) {
@@ -280,7 +276,9 @@ public class CadastroInvestidor extends javax.swing.JFrame {
 //            }
 //        });
 //    }
-
+    
+    
+    private ControllerCadastro control;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btCadastrar;
     private javax.swing.JMenuBar jMenuBar1;

@@ -5,10 +5,10 @@
 package DAO;
 
 import java.sql.Connection;
-import model.Investidor;
-import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.ResultSet;
 import java.sql.PreparedStatement;
+import model.Investidor;
 /**
  *
  * @author beatr
@@ -19,19 +19,18 @@ public class BancoDAO {
     public BancoDAO(Connection conn) {
         this.conn = conn;
     }
-    public ResultSet consultar(Investidor investidor) throws SQLException{ 
-        String sql = "select * from User where CPF = ? ";
+    
+    public void inserir(Investidor investidor) throws SQLException{
+        String sql = "insert into User (ID_user, Nome, Senha, CPF) values('" +
+                1 + "', '" + investidor.getNome() + "', '" +
+                investidor.getSenha() + "', '" +
+                investidor.getCpf() + "')";
         PreparedStatement statement = conn.prepareStatement(sql);
-        statement.setString(1,investidor.getCpf());//1 pq  é primeira interrogação
-        statement.execute();//excuta a query e gera reesultado do select(da consulta)
-        ResultSet resultado = statement.getResultSet();
-        return resultado;
-    }
-    public void excluir(Investidor investidor) throws SQLException{
-        String sql = "delete from aluno where CPF = ?";
-        PreparedStatement statement = conn.prepareStatement(sql); //passa string para a conexao
-        statement.setString(1, investidor.getCpf());
         statement.execute();
         conn.close();
+        
     }
+    
+    
+    
 }
