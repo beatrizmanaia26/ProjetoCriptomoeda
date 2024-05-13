@@ -11,7 +11,6 @@ import view.Login;
  * @author beatr
  */
 public class ProjetoCriptmoeda {
-
     /**
      * @param args the command line arguments
      */

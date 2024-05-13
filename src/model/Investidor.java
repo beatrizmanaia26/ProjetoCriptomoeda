@@ -10,4 +10,8 @@ package model;
  */
 public class Investidor extends Pessoa{
     Carteira carteira = new Carteira();
+
+    public Investidor(String nome, String cpf, String senha) {
+        super(nome, cpf, senha);
+    }
 }

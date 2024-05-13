@@ -4,6 +4,7 @@
  */
 package controller;
 
+import model.Administrador;
 import view.BemVindoAdministrador;
 import view.Login;
 
@@ -20,10 +21,11 @@ public class ControllerLogin {
     
     
    public void ValidarUsuario(){
+       Administrador a = new Administrador(); 
        String cpfLogin = view.getTxtCPF().getText();
        String senhaLogin = view.getTxtSenha().getText();
        
-       if(cpfLogin.equals("52659434865") && senhaLogin.equals("belu")){
+       if(cpfLogin.equals(a.getCpf()) && senhaLogin.equals(a.getSenha())){
            BemVindoAdministrador adm = new BemVindoAdministrador();
            adm.setVisible(true);
            view.setVisible(false);
