@@ -4,6 +4,15 @@
  */
 package view;
 
+import controller.ControllerExcluirInvestidor;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextField;
+import model.Investidor;
+
 /**
  *
  * @author beatr
@@ -13,7 +22,8 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
     /**
      * Creates new form ExcluirInvestidor
      */
-    public ExcluirInvestidor() {
+    public ExcluirInvestidor(Investidor investidor) {
+        control = new ControllerExcluirInvestidor(this, investidor);
         initComponents();
     }
 
@@ -28,7 +38,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
 
         lblExcluirInvestidor = new javax.swing.JLabel();
         lblCPFInvest = new javax.swing.JLabel();
-        txtCPFAdmin = new javax.swing.JTextField();
+        txtCPFInvest = new javax.swing.JTextField();
         btExcluir = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuMenu = new javax.swing.JMenu();
@@ -43,7 +53,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
         lblCPFInvest.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         lblCPFInvest.setText("CPF:");
 
-        txtCPFAdmin.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtCPFInvest.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
 
         btExcluir.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         btExcluir.setText("Excluir");
@@ -81,7 +91,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(lblCPFInvest)
                         .addGap(29, 29, 29)
-                        .addComponent(txtCPFAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtCPFInvest, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(136, 136, 136)
                         .addComponent(btExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -94,7 +104,7 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCPFInvest)
-                    .addComponent(txtCPFAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCPFInvest, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(btExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39))
@@ -110,11 +120,69 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
 
     private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirActionPerformed
         // TODO add your handling code here:
+        control.remover();
     }//GEN-LAST:event_btExcluirActionPerformed
+
+    public JButton getBtExcluir() {
+        return btExcluir;
+    }
+
+    public void setBtExcluir(JButton btExcluir) {
+        this.btExcluir = btExcluir;
+    }
+
+    public JMenuBar getjMenuBar1() {
+        return jMenuBar1;
+    }
+
+    public void setjMenuBar1(JMenuBar jMenuBar1) {
+        this.jMenuBar1 = jMenuBar1;
+    }
+
+    public JMenuItem getjMenuItemMenu() {
+        return jMenuItemMenu;
+    }
+
+    public void setjMenuItemMenu(JMenuItem jMenuItemMenu) {
+        this.jMenuItemMenu = jMenuItemMenu;
+    }
+
+    public JMenu getjMenuMenu() {
+        return jMenuMenu;
+    }
+
+    public void setjMenuMenu(JMenu jMenuMenu) {
+        this.jMenuMenu = jMenuMenu;
+    }
+
+    public JLabel getLblCPFInvest() {
+        return lblCPFInvest;
+    }
+
+    public void setLblCPFInvest(JLabel lblCPFInvest) {
+        this.lblCPFInvest = lblCPFInvest;
+    }
+
+    public JLabel getLblExcluirInvestidor() {
+        return lblExcluirInvestidor;
+    }
+
+    public void setLblExcluirInvestidor(JLabel lblExcluirInvestidor) {
+        this.lblExcluirInvestidor = lblExcluirInvestidor;
+    }
+
+    public JTextField getTxtCPFInvest() {
+        return txtCPFInvest;
+    }
+
+    public void setTxtCPFInvest(JTextField txtCPFInvest) {
+        this.txtCPFInvest = txtCPFInvest;
+    }
 
     /**
      * @param args the command line arguments
      */
+<<<<<<< Updated upstream
 //    public static void main(String args[]) {
 //        /* Set the Nimbus look and feel */
 //        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -181,6 +249,10 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
 //    }
 
 
+=======
+  
+    private ControllerExcluirInvestidor control; 
+>>>>>>> Stashed changes
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btExcluir;
     private javax.swing.JMenuBar jMenuBar1;
@@ -188,6 +260,6 @@ public class ExcluirInvestidor extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuMenu;
     private javax.swing.JLabel lblCPFInvest;
     private javax.swing.JLabel lblExcluirInvestidor;
-    private javax.swing.JTextField txtCPFAdmin;
+    private javax.swing.JTextField txtCPFInvest;
     // End of variables declaration//GEN-END:variables
 }

@@ -15,8 +15,12 @@ import java.sql.SQLException;
 public class Conexao {
     public Connection getConnection() throws SQLException{
         Connection conexao = DriverManager.getConnection(
+<<<<<<< Updated upstream
         "jdbc:postgresql://localhost:5432/Criptomoedas","postgres","fei");
                                                                 //Mudar senha
+=======
+        "jdbc:postgresql://localhost:5432/Criptomoedas","postgres","Bedagi");//Mudar senha
+>>>>>>> Stashed changes
         return conexao;
     }
 }

@@ -57,7 +57,7 @@
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="lblCPFInvest" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="txtCPFAdmin" min="-2" pref="199" max="-2" attributes="0"/>
+                      <Component id="txtCPFInvest" min="-2" pref="199" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
@@ -75,7 +75,7 @@
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblCPFInvest" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCPFAdmin" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="txtCPFInvest" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="46" max="32767" attributes="0"/>
               <Component id="btExcluir" min="-2" pref="50" max="-2" attributes="0"/>
@@ -101,7 +101,7 @@
         <Property name="text" type="java.lang.String" value="CPF:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCPFAdmin">
+    <Component class="javax.swing.JTextField" name="txtCPFInvest">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>

@@ -4,6 +4,13 @@
  */
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextField;
+
 /**
  *
  * @author luana
@@ -16,6 +23,94 @@ public class CadastroInvestidor extends javax.swing.JFrame {
     public CadastroInvestidor() {
         initComponents();
         
+    }
+
+    public JButton getBtCadastrar() {
+        return btCadastrar;
+    }
+
+    public void setBtCadastrar(JButton btCadastrar) {
+        this.btCadastrar = btCadastrar;
+    }
+
+    public JMenuBar getjMenuBar1() {
+        return jMenuBar1;
+    }
+
+    public void setjMenuBar1(JMenuBar jMenuBar1) {
+        this.jMenuBar1 = jMenuBar1;
+    }
+
+    public JMenuItem getjMenuItem1() {
+        return jMenuItem1;
+    }
+
+    public void setjMenuItem1(JMenuItem jMenuItem1) {
+        this.jMenuItem1 = jMenuItem1;
+    }
+
+    public JMenu getjMenuMenu() {
+        return jMenuMenu;
+    }
+
+    public void setjMenuMenu(JMenu jMenuMenu) {
+        this.jMenuMenu = jMenuMenu;
+    }
+
+    public JLabel getLblCPFInvest() {
+        return lblCPFInvest;
+    }
+
+    public void setLblCPFInvest(JLabel lblCPFInvest) {
+        this.lblCPFInvest = lblCPFInvest;
+    }
+
+    public JLabel getLblCadastroInvestidor() {
+        return lblCadastroInvestidor;
+    }
+
+    public void setLblCadastroInvestidor(JLabel lblCadastroInvestidor) {
+        this.lblCadastroInvestidor = lblCadastroInvestidor;
+    }
+
+    public JLabel getLblNomeInvest() {
+        return lblNomeInvest;
+    }
+
+    public void setLblNomeInvest(JLabel lblNomeInvest) {
+        this.lblNomeInvest = lblNomeInvest;
+    }
+
+    public JLabel getLblSenhaInvest() {
+        return lblSenhaInvest;
+    }
+
+    public void setLblSenhaInvest(JLabel lblSenhaInvest) {
+        this.lblSenhaInvest = lblSenhaInvest;
+    }
+
+    public JTextField getTxtCPFInvest() {
+        return txtCPFInvest;
+    }
+
+    public void setTxtCPFInvest(JTextField txtCPFInvest) {
+        this.txtCPFInvest = txtCPFInvest;
+    }
+
+    public JTextField getTxtNomeInvest() {
+        return txtNomeInvest;
+    }
+
+    public void setTxtNomeInvest(JTextField txtNomeInvest) {
+        this.txtNomeInvest = txtNomeInvest;
+    }
+
+    public JTextField getTxtSenhaInvest() {
+        return txtSenhaInvest;
+    }
+
+    public void setTxtSenhaInvest(JTextField txtSenhaInvest) {
+        this.txtSenhaInvest = txtSenhaInvest;
     }
 
     /**
@@ -51,6 +146,11 @@ public class CadastroInvestidor extends javax.swing.JFrame {
         txtSenhaInvest.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
 
         txtCPFInvest.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtCPFInvest.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCPFInvestActionPerformed(evt);
+            }
+        });
 
         btCadastrar.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         btCadastrar.setText("Cadastrar");
@@ -143,6 +243,10 @@ public class CadastroInvestidor extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void txtCPFInvestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFInvestActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCPFInvestActionPerformed
 
    
 //    public static void main(String args[]) {
